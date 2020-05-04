@@ -1,1 +1,7 @@
-#new project an Mon May  4 12:58:52 +05 2020
+# main.py
+from fastapi import FastAPI
+app = FastAPI()
+
+@app.get("/")
+def hello():
+    return {"message":"Hello TutLinks.com"}
